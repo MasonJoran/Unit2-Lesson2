@@ -8,10 +8,43 @@
 
 	<!-- The only part of this file you should edit is the text between the style tags below. -->
 	<style type="text/css">
+
+	.container {
+		display: grid;
+		grid-template-columns: 3fr 3fr;
+		grid-template-rows: 2fr 1fr 1fr 2fr;
+		grid-template-areas: 
+			"G B"
+			"G R"
+			"Y R"
+			"Y P"
+	}
+
+	#green {
+		grid-area: G;
+	}
+
+	#blue {
+		grid-area: B;
+	}
+
+	#red {
+		grid-area: R;
+	}
+
+	#yellow {
+		grid-area: Y;
+	}
+
+	#purple {
+		grid-area: P;
+	}
+
 		
 	</style>
 
 	<!-- Do NOT edit any code below this line. -->
+	
 </head>
 <body>
 	<div class="container">
